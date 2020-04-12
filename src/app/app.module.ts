@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { AuthService } from './auth.service';
 import { HomeComponent } from './home/home.component';
 import { CapitalizePipe } from './capitalize.pipe';
+import { MyblogComponent } from './myblog/myblog.component';
+import { MyblogsComponent } from './myblogs/myblogs.component';
 let firebaseConfig = {
  apiKey: "AIzaSyDD2RJYqJP93dTGREPz5w5lHmt3CmqdxvQ",
     authDomain: "scribeblog-32a72.firebaseapp.com",
@@ -28,7 +30,9 @@ firebase.initializeApp(firebaseConfig);
     SignupComponent,
     LoginComponent,
     HomeComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    MyblogComponent,
+    MyblogsComponent
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule
