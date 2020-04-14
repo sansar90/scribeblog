@@ -1,4 +1,10 @@
-   <div class="container">
+   <div class="row background">
+       <div class="col-sm-6 background-
+       left p-5 pb-5">
+           <h1>Don't just think!!<br>Let's Blog it...</h1>
+       </div>
+       <div class="col-sm-6 background-
+       right p-5 pb-5">
       <div class="row">
           <div class="offset-sm-2 col-sm-8>
         col-sm-8">
@@ -24,11 +30,11 @@
         placeholder="Last Name"
         [formControl]="myForm.controls['lastName']"></div>
 </div>
-<div class="alert alert-danger" *ngIf="myForm
+<div class="alert alert-danger" *ngIf="!myForm
 .controls['firstName'].valid || !myForm.
 controls['lastName'].valid &&
 myForm
-.controls['firstName'].touched ||!myForm.
+.controls['firstName'].touched || myForm.
 controls['lastName'].touched
 ">
     First and Last name are required
@@ -41,9 +47,8 @@ controls['lastName'].touched
             placeholder="Enter your email"
             [formControl]="myForm.controls['email']">
             <div class="alert alert-danger"
-            *ngIf=
-        "!myForm
-            .controls['email'].valid  && myForm
+            *ngIf="myForm
+.controls['email'].invalid  && myForm
 .controls['email'].touched">
                 email required
             </div>
@@ -71,7 +76,7 @@ controls['lastName'].touched
 <div class="text-center">
     <button type="submit" class="btn btn-block 
     btn-warning"
-   [disabled]="myForm.valid" >
+    >
         SUBMIT
     </button>
 </div>
@@ -95,5 +100,5 @@ controls['lastName'].touched
 
     </div>
       </div>
-
+</div>
    </div>
