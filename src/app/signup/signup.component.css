@@ -1,6 +1,10 @@
+.row background{
+  background-color: #2e7cf6;
+}
+
 .background-left{
     background-color: #2e7cf6;
-    background-image: url('https://cdn.jsdelivr.net/gh/sansar90/scribeblog@master/SCRIBE.png');
+    background-image: url("https://cdn.jsdelivr.net/gh/sansar90/scribeblog@master/SCRIBE.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom;
@@ -23,6 +27,6 @@ border-radius: 50px;
 }
 
 h1{
-    color: #fff;
+    color: #fff234;
 
 }
