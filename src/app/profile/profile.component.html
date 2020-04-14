@@ -1,3 +1,20 @@
-<p>
-profile works!
-</p>
+
+
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item right" *ngIf="!loggedIn"  routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse">
+                <button class="btn btn-outline-light px-5" routerLink="/login">Login</button>
+              </li>
+
+              <li class="nav-item right" *ngIf="loggedIn">
+                <a class="nav-link" [routerLink]="'/profile/'+user.uid">My Profile</a>
+              </li>
+              <li class="nav-item right" *ngIf="loggedIn">
+                <a class="nav-link" routerLink="/" (click)="logout()">Log out</a>
+              </li>
+        </ul>
+
+
+
+        
+
