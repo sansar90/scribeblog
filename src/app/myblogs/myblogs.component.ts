@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
 
 @Component({
   selector: 'app-myblogs',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./myblogs.component.css']
 })
 export class MyblogsComponent implements OnInit {
+user:any={};
+  constructor() {
+    this.user=firebase.auth().currentUser;
 
-  constructor() { }
+   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }
