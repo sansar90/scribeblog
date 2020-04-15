@@ -14,6 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MyblogsComponent } from './myblogs/myblogs.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { CreateComponent } from './create/create.component';
 let firebaseConfig = {
  apiKey: "AIzaSyDD2RJYqJP93dTGREPz5w5lHmt3CmqdxvQ",
     authDomain: "scribeblog-32a72.firebaseapp.com",
@@ -35,7 +36,8 @@ firebase.initializeApp(firebaseConfig);
     CapitalizePipe,
     ProfileComponent,
    MenuComponent,
-    MyblogsComponent
+    MyblogsComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule,AppRoutingModule
