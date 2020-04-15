@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import{FormsModule, ReactiveFormsModule}from '@angular/forms';
 import *as firebase from 'firebase/app';
 import 'firebase/auth';
+import { NgxEditorModule } from 'ngx-editor';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
@@ -15,6 +16,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { MyblogsComponent } from './myblogs/myblogs.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { CreateComponent } from './create/create.component';
+import { HttpClientModule } from '@angular/common/http';
 let firebaseConfig = {
  apiKey: "AIzaSyDD2RJYqJP93dTGREPz5w5lHmt3CmqdxvQ",
     authDomain: "scribeblog-32a72.firebaseapp.com",
@@ -40,8 +42,7 @@ firebase.initializeApp(firebaseConfig);
     CreateComponent
   ],
   imports: [
-    BrowserModule,FormsModule,ReactiveFormsModule,AppRoutingModule
-  ],
+    BrowserModule,FormsModule,ReactiveFormsModule,AppRoutingModule,NgxEditorModule,HttpClientModule ],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })
