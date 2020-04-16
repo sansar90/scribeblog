@@ -20,7 +20,7 @@ export class CreateComponent implements OnInit {
       "minWidth": "0",
       "translate": "yes",
       "enableToolbar": true,
-      "showToolbar": true,
+      "showToolbar": false,
       "placeholder": "Enter text here...",
       "imageEndPoint": "",
       "toolbar": [
