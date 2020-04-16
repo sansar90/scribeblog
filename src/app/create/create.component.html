@@ -12,7 +12,8 @@
     <div class="form-group">
         <label>Post Content</label
             >
- <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="Content"></app-ngx-editor>
+ <app-ngx-editor [placeholder]="'Enter text here...'" 
+ [config]="editorConfig" [(ngModel)]="Content"></app-ngx-editor>
 <div class="form-group float-right">
     <button (click)="createPost()"
      class="btn btn-warning round">
