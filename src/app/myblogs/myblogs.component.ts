@@ -16,5 +16,10 @@ user:any={};
 
   ngOnInit(): void {
   }
-
+  getPosts(){
+    //get the list of posts
+  }
+onPostCrreated(){
+  //refresh the list of posts
+}
 }
