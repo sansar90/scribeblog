@@ -9,8 +9,13 @@ import 'firebase/auth';
 })
 export class MyblogsComponent implements OnInit {
 user:any={};
+posts:any[]=[];
   constructor() {
+    firebase.firestore().settings({
+      timestampsInSnapshots:true
+    });
     this.user=firebase.auth().currentUser;
+    this.getPosts();
 
    }
 
@@ -18,8 +23,20 @@ user:any={};
   }
   getPosts(){
     //get the list of posts
+    firebase.firestore().collection("posts").orderBy("created","desc").get().then((querySnapshot)=>{
+      console.log(querySnapshot.docs);
+      this.posts=querySnapshot.docs;
+    }).catch((err)=>{
+      console.log(err);
+    })
   }
 onPostCrreated(){
   //refresh the list of posts
+    this.posts=[];
+    this.getPosts();
+}
+onDelete(){
+  this.posts=[];
+    this.getPosts();
 }
 }
