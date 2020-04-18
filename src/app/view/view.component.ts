@@ -19,7 +19,9 @@ firebase.firestore().settings({
 
     firebase.firestore().collection("posts").doc(postId).get().then((docSnapshot)=>{
 this.ngZone.run(()=>{
-  
+  this.post=docSnapshot.data();
+console.log(this.post);
+})
 
 })
 

@@ -19,6 +19,7 @@ import { CreateComponent } from './create/create.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { ViewComponent } from './view/view.component';
+import { CommentsComponent } from './comments/comments.component';
 let firebaseConfig = {
  apiKey: "AIzaSyDD2RJYqJP93dTGREPz5w5lHmt3CmqdxvQ",
     authDomain: "scribeblog-32a72.firebaseapp.com",
@@ -43,7 +44,8 @@ firebase.initializeApp(firebaseConfig);
     MyblogsComponent,
     CreateComponent,
     PostComponent,
-    ViewComponent
+    ViewComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule,AppRoutingModule,NgxEditorModule,HttpClientModule ],
