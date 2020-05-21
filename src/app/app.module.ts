@@ -20,6 +20,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { ViewComponent } from './view/view.component';
 import { CommentsComponent } from './comments/comments.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+
+
+
 let firebaseConfig = {
  apiKey: "AIzaSyDD2RJYqJP93dTGREPz5w5lHmt3CmqdxvQ",
     authDomain: "scribeblog-32a72.firebaseapp.com",
@@ -45,7 +49,8 @@ firebase.initializeApp(firebaseConfig);
     CreateComponent,
     PostComponent,
     ViewComponent,
-    CommentsComponent
+    CommentsComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule,AppRoutingModule,NgxEditorModule,HttpClientModule ],

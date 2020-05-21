@@ -1,32 +1,28 @@
-.row background{
-  background-color: #2e7cf6;
-}
-
-.background-left{
+.background-left {
     background-color: #2e7cf6;
-    background-image: url("https://cdn.jsdelivr.net/gh/sansar90/scribeblog@master/SCRIBE.png");
+    background-image: url('/assets/Sign-Up-BG-Image.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom;
 }
 
-.background-right{
+.background-right {
     background-color: #2e7cf6;
 }
 
-.card{
+.card {
     background-color: transparent;
     color: #fff;
-} 
-.text-muted{
-    color:#fff !important;
 }
+
+.text-muted{ 
+    color: #fff !important;
+}
+
 .btn[type=submit]{
-border-radius: 50px;
-
+    border-radius: 50px;
 }
 
-h1{
-    color: #fff234;
-
+h1 {
+    color: #fff;
 }
