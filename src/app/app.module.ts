@@ -35,6 +35,8 @@ let firebaseConfig = {
     measurementId: "G-J83080CP0N"
 };
 firebase.initializeApp(firebaseConfig);
+  
+
 
 @NgModule({
   declarations: [
